@@ -1,0 +1,307 @@
+
+/*
+-------------------
+1.0 GENERAL STYLING
+-------------------
+*/
+
+body{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
+	color: #222222;
+	overflow-y: hidden;
+	height: 100vh;
+}
+
+a, 
+.navbar-default .navbar-nav>li>a{
+	color: #222222;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover{
+	text-decoration: underline;
+	color: #0fe2b8;
+	background-color: transparent;
+}
+
+.script{
+	font-family: 'Great Vibes', cursive;
+	font-size: 20px;
+}
+
+.script span{
+	display: inline-block;
+	position: relative;
+}
+
+.script span::before,
+.script span::after{
+	content: "";
+	position: absolute;
+	height: 1px;
+	border-bottom: 1px solid black;
+	width: 100%;
+	top: 13px;
+}
+
+.script span::before{
+	left: -100px;
+}
+
+.script span::after{
+	left: 100px;
+}
+
+hr{
+	border-color: #222;
+	width: 87%;
+}
+
+button.navbar-toggle {
+	border: none;
+	padding: 0;
+	margin: 0 0 0 10%;
+	float: none;
+	text-align: center;
+	background-color: transparent !important;
+}
+
+button.navbar-toggle p{
+	margin: 0;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/*
+-------------------
+1.1 NAV STYLING
+-------------------
+*/
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-default{
+	background-color: transparent;
+	border: none;
+	padding: 40px 0;
+}
+
+nav ul.navbar-nav li{
+	text-transform: uppercase;
+	padding: 0 25px;
+}
+
+.navbar-default .navbar-nav>li>a{
+	font-weight: 500;
+	transition: .25s ease-out;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	color: #0fe2b8;
+	transition: .25s ease-in;
+}
+
+
+/*
+-------------------
+2.0 HOME STYLING
+-------------------
+*/
+
+#home-body{
+	background: url('../images/homebg.png') no-repeat;
+	background-size: 100%;
+	background-position: 50% 140%;
+}
+
+#home #intro,
+#letterday{
+	text-align: center;
+	padding: 0 37%;	
+
+}
+
+#intro h1{
+	font-size: 42px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #0fe2b8;
+	margin-bottom: 20px;
+}
+
+/*
+-------------------
+3.0 LETTERDAY STYLING
+-------------------
+*/
+
+#letterday-body{
+	text-align: center;
+	background: url('../images/letterdaybg.png') repeat-x;
+	background-size: 60%;
+	background-position: 50% 110%;
+}
+
+#letterday p{
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+#letterday .script span::before,
+#letterday .script span::after{
+	top: 18px;
+	width: 80%;
+}
+
+#letterday .script span::after{
+	left: 115px;
+}
+
+#letterday #day{
+	font-size: 28px;
+	text-transform: none;
+}
+
+#letterday #letter{
+	font-size: 120px;
+	font-weight: bold;
+	color: #0fe2b8;
+	line-height: 100px;
+}
+
+#letterday #endday{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+/*
+-------------------
+2.0 RESPONSIVE STYLING
+-------------------
+*/
+
+@media screen and (max-width: 1184px){
+
+	#home #intro,
+	#letterday{
+	padding: 0 34%;	
+	}
+
+}
+
+@media screen and (max-width: 1030px){
+
+	#home #intro,
+	#letterday{
+	padding: 0 34%;	
+	}
+
+}
+
+@media screen and (max-width: 968px){
+
+	#home #intro,
+	#letterday{
+	padding: 0 30%;	
+	}
+
+}
+
+
+@media screen and (max-width: 780px){
+
+	#home #intro,
+	#letterday{
+	padding: 0 28%;	
+	}
+
+	#home-body{
+		background-position: 50% 100%;
+	}
+
+}
+
+@media screen and (max-width: 767px){
+
+	
+	.navbar-default .navbar-collapse{
+		border-top: none;
+		border-bottom: 1px solid #222;
+	}
+
+}
+
+@media screen and (max-width: 740px){
+/*
+	#letterday{
+		background-position: 50% 100%;
+	}*/
+
+}
+
+@media screen and (max-width: 712px){
+
+	#home #intro,
+	#letterday{
+		padding: 0 25%;	
+	}
+
+}
+
+@media screen and (max-width: 660px){
+
+	#letterday-body{
+		background-size: 100%;
+	}
+
+}
+
+@media screen and (max-width: 630px){
+
+	#home #intro,
+	#letterday{
+		padding: 0 20%;	
+	}
+
+}
+
+
+@media screen and (max-width: 530px){
+
+	#home #intro,
+	#letterday{
+		padding: 0 15%;	
+	}
+
+}
+
+@media screen and (max-width: 458px){
+
+	#home{
+		background-size: 150%;
+	}
+
+	#home #intro,
+	#letterday{
+		padding: 0 10%;
+	}
+
+}
+
+@media screen and (max-width: 405px){
+
+	#home #intro,
+	#letterday{
+		padding: 0 5%;	
+	}
+
+}
